@@ -168,8 +168,8 @@ contract('01 - Ethicare contract', function(accounts) {
             const fundraisingStablecoinBalanceBefore = await stablecoinInstance.balanceOf.call(fundraisingInstance.address);
             const fundraisingECOIBalanceBefore = await ethicoinInstance.balanceOf.call(fundraisingInstance.address);
             const fundraisingEtherBalanceBefore = await balance.current(fundraisingInstance.address);
-            
-            await ethicareInstance.CollectWindfallProfitFromFundraising(fundraisingID, { from: theOwner });
+
+            await ethicareInstance.CollectWindfallProfitFromFundraising(fundraisingID.toString(), { from: theOwner });
             
             const ethicareStablecoinBalanceAfter = await stablecoinInstance.balanceOf.call(Ethicare.address);
             const ethicareECOIBalanceAfter = await ethicoinInstance.balanceOf.call(Ethicare.address);
