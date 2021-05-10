@@ -1,0 +1,9 @@
+/*
+const Explorer = artifacts.require("./Explorer.sol");
+
+const ethicareAddress = '0x50a0Ca616bc53Cd0318A58f68325B7aD0d9C69DE';
+
+module.exports = function(deployer, network) {
+  return deployer.deploy(Explorer, ethicareAddress);
+};
+*/

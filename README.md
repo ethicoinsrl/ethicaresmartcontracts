@@ -1,2 +1,2 @@
-# ethicaresmartcontracts
-Ethicare smart contracts
+# EthicareSmartcontracts
+
